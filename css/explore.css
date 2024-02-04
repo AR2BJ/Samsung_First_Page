@@ -1,0 +1,266 @@
+div.wrapper>main>div.explore{
+    width: 100%;
+    height: fit-content;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+div.wrapper>main>div.explore>div.exp_title{
+    vertical-align: top;
+    text-align: center;
+}
+
+div.wrapper>main>div.explore>div.exp_title>a{
+    display: inline-block;
+    position: relative;
+    color: #000;
+}
+
+div.wrapper>main>div.explore>div.exp_title>a::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    visibility: hidden;
+    transform: scaleX(0);
+    background-color: #000;
+}
+
+div.wrapper>main>div.explore>div.exp_title>a:hover{
+    color: #555;
+}
+
+div.wrapper>main>div.explore>div.exp_title>a:focus::after,
+div.wrapper>main>div.explore>div.exp_title>a:hover::after{
+    background-color: #555;
+    animation: exp_animate .2s cubic-bezier(0.4,0,0.2,1).1s both;
+}
+
+div.wrapper>main>div.explore>div.exp_title>a>h2{
+    display: inline-block;
+    font-size: 38px;
+    font-family: samsungsharpsans;
+}
+
+div.wrapper>main>div.explore>div.exp_title>a:focus{
+    box-shadow: 0 0 0 2px #fff;
+    outline: 2px dotted #000;
+    color: #555;
+}
+
+div.wrapper>main>div.explore>div.exp_slider{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: inherit;
+    height: 684px;
+    margin-top: 48px;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide>i.before{
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 10px;
+    opacity: 0;
+    transition: left cubic-bezier(0.4,0,0.2,1) .2s, background-color cubic-bezier(0.4,0,0.2,1) .2s;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide>i.after{
+    background-color: transparent;
+    position: absolute;
+    width: 595px;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: background-color cubic-bezier(0.4,0,0.2,1) .2s;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide-active>i.before{
+    left: 0;
+    background-color: #000;
+    opacity: 1;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide-active>i.after{
+    background-color: rgba(0,0,0,0.2);
+    opacity: 1;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide>div.exp_content{
+    height: 99px;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide>div.content2{
+    height: 60px !important;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide>div.content4{
+    height: 85px;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide>div.exp_content>div.exp_content{
+    height: 64px;
+    overflow: hidden;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide-active>div.exp_content>div.exp_content{
+    height: inherit;
+    overflow: visible;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide>div.exp_content>div.exp_content>div.num_and_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide>div.exp_content>div.exp_content>div.num_and_title>p:nth-of-type(1){
+    height: inherit;
+    width: 64px;
+    padding-left: 24px;
+    font-family: samsungsharpsans;
+    font-size: 16px;
+    line-height: 2;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide>div.exp_content>div.exp_content>div.num_and_title>p:nth-of-type(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 620px;
+    height: inherit;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 24px;
+    font-family: samsungsharpsans;
+    max-height: inherit;
+    color: #000;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide>div.exp_content>div.exp_content>div.learn_more{
+    display: none;
+    opacity: 1;
+    visibility: hidden;
+    margin-top: 6px;
+    transition: opacity .2s cubic-bezier(0.4,0,0.2,1);
+    margin-left: 90px;
+    height: fit-content;
+}
+
+/*div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide>div.exp_content>div.exp_content>div.learn_more*/
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide-active>div.exp_content>div.exp_content>div.learn_more{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide>div.exp_content>div.exp_content>div.learn_more>a.slide_link_1{
+    margin-bottom: 0;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: inherit;
+    height: inherit;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper {
+    display: grid;
+    grid-template-columns: 684px 650px;
+    grid-template-rows: repeat(2, 40px) repeat(5, 1fr) repeat(2, 40px);
+    position: relative;
+    height: 684px;
+    width: 100%;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.slider_img {
+    display: flex;
+    align-self: flex-start;
+    width: 684px;
+    height: 684px;
+    position: absolute;
+    top: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.slider_img>img.slider_img {
+    border-radius: 20px;
+    transition: transform cubic-bezier(0.4,0,0.2,1) .2s;
+    cursor: pointer;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.slider_img:hover>img.slider_img {
+    transform: scale(1.1);
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide {
+    height: 66px !important;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    width: 100%;
+    grid-column: 2 / 3;
+    margin-left: 45px;
+    transition: height .2s cubic-bezier(0.4,0,0.2,1);
+    cursor: pointer;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.swiper-slide-active {
+    height: 147px !important;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.slide1 {
+    grid-row: 3 / 4;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.slide2 {
+    grid-row: 4 / 5;
+    margin-top: -16px;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.slide3 {
+    grid-row: 5 / 6;
+    margin-top: -16px;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.slide4 {
+    grid-row: 6 / 7;
+    margin-top: -16px;
+}
+
+div.wrapper>main>div.explore>div.exp_slider>div.swiper>div.swiper-wrapper>div.slide5 {
+    grid-row: 7 / 8;
+    margin-top: -16px;
+}
+
+@keyframes exp_animate {
+    0% {
+        visibility: hidden;
+        transform: scaleX(0);
+    }
+    100% {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+}

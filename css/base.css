@@ -1,0 +1,175 @@
+@font-face {
+  font-family: samsungone700;
+  src: url(../font/eot/SamsungOne700.eot), url(../font/ttf/SamsungOne700.ttf), url(../font/woff/SamsungOne700.woff), url("../font/woff2/SamsungOne700.woff2");
+}
+
+@font-face {
+  font-family: samsungone400;
+  src: url(../font/eot/SamsungOne400.eot), url(../font/ttf/SamsungOne400.ttf), url(../font/woff/SamsungOne400.woff), url("../font/woff2/SamsungOne400.woff2");
+}
+
+@font-face {
+  font-family: samsungsharpsans;
+  src: url(../font/eot/SamsungSharpSans.eot), url(../font/ttf/SamsungSharpSans.ttf), url(../font/woff/SamsungSharpSans.woff), url("../font/woff2/SamsungSharpSans.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html{
+  position: relative;
+}
+
+div.wrapper {
+  width: 100%;
+}
+
+div.wrapper>div.feedback{
+  width: 18px;
+  height: 88px;
+  margin-bottom: -90px;
+  position: fixed;
+  right: 0;
+  bottom: 362px;
+  z-index: 4;
+  cursor: pointer;
+}
+
+div.wrapper>div.feedback>a{
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+
+div.wrapper>div.feedback>img.feedback{
+  width: inherit;
+  height: inherit;
+}
+
+div.wrapper>div.feedback>a:focus{
+  box-shadow: 0 0 0 2px #fff;
+  outline: 2px dotted #000;
+  outline-offset: 1.5px;
+}
+
+div.wrapper>div.backdrop{
+  background-color: #000;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  z-index: -1;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span.label{
+  color: #fff;
+  background-color: #2189ff;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  margin: 1.2rem;
+  height: 19px;
+  padding: 0 0.3vw;
+  border-radius: 0.7vw;
+  line-height: 20px;
+  font-size: 12px;
+  font-family: samsungone700;
+  text-shadow: 0 0 3px rgba(0,0,0,0.56);
+  z-index: 10;
+}
+
+div.wrapper>main div.slider_title {
+  width: inherit;
+  height: 50%;
+  text-align: center;
+  order: 1;
+}
+
+div.wrapper>main div.slider_title>h2 {
+  font-size: 38px;
+  font-family: samsungsharpsans;
+  margin-top: 46px;
+}
+
+sup {
+  font-size: 12.5px;
+}
+
+span.txt1 {
+  display: inline-block;
+  margin: 11px 0 5px 0;
+  color: #2189ff;
+  font-size: 14px;
+  font-family: samsungone700;
+}
+
+a.slide_link_1{
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  width: fit-content;
+  color: #000;
+  font-family: samsungone700;
+  margin: 0 20px 25px 0;
+  padding: 10px 0 4px 0;
+}
+
+a.slide_link_1::after {
+  content: ' ';
+  width: 70.69px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2.2px;
+  background-color: #000;
+}
+
+a.slide_link_1:hover::after{
+  animation: line 290mS cubic-bezier(0.33,0,0.3,1) 1 alternate forwards;
+}
+
+.left_animate {
+  position: relative;
+  left: -200%;
+  animation: leftAnimate 0.5s ease-out forwards;
+}
+
+.right_animate {
+  position: relative;
+  right: -200%;
+  animation: rightAnimate 0.5s ease-out forwards;
+}
+
+@keyframes leftAnimate {
+  to {
+    left: 0;
+  }
+}
+
+@keyframes rightAnimate {
+  to {
+    right: 0;
+  }
+}
+
+@keyframes line {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

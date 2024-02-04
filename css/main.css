@@ -1,0 +1,14 @@
+@import "../css/base.css";
+@import "../css/header.css";
+@import "../css/slider_1.css";
+@import "../css/slider_2.css";
+@import "../css/slider_3.css";
+@import "../css/slider_4.css";
+@import "../css/slider_5.css"; 
+@import "../css/slider_6.css";
+@import "../css/slider_7.css";
+@import "../css/explore.css";
+@import "../css/search_box.css";
+@import "../css/disclaimer.css";
+@import "../css/footer.css";
+@import url("../css/media.css") screen and (min-width: 1440px);

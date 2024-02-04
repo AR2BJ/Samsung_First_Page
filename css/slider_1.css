@@ -1,0 +1,230 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+div.wrapper > main > div.slider_1 > div.swiper {
+  width: 100%;
+  max-width: 1440px;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-wrapper > div.swiper-slide > a > img:not(img[alt="slider_1_1"]) {
+  height: 643px;
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-pagination > span.swiper-pagination-bullet {
+  position: relative;
+  width: 160px;
+  margin: 0 7px 27px 10px;
+  border-radius: 0 !important;
+  height: fit-content;
+  background-color: transparent;
+  opacity: 1 !important;
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-pagination > span.swiper-pagination-bullet:focus {
+  box-shadow: 0 0 0 2px #fff;
+  outline: 2px dotted #000;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-pagination > span.swiper-pagination-bullet:hover > span.pag_label,
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-pagination > span.swiper-pagination-bullet:focus > span.pag_label {
+  opacity: 1;
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-button-next,
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  color: #fff !important;
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+  transition: all 100ms linear;
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-button-next::after,
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-button-prev::after {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-button-next:hover,
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-wrapper > div.swiper-slide > div.slide_box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 88px;
+}
+
+div.swiper-wrapper > div.swiper-slide > div.slide_box > h2 {
+  font-size: 48px;
+  font-family: samsungsharpsans;
+  margin-bottom: 24px;
+}
+
+div.swiper-wrapper > div.swiper-slide > div.light_mode > h2 {
+  color: #fff !important;
+  font-size: 48px;
+  font-family: samsungsharpsans;
+  margin-bottom: 24px;
+}
+
+div.swiper-wrapper > div.swiper-slide > div.slide_box > p.title_p {
+  color: #fff;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: samsungone700;
+  line-height: 1.33;
+  word-wrap: break-word;
+}
+
+div.swiper-wrapper > div.swiper-slide > div.slide_box > p {
+  font-size: 18px;
+  font-family: samsungone400;
+  font-weight: lighter;
+  margin-bottom: 45px;
+}
+
+div.swiper-wrapper > div.swiper-slide > div.light_mode > p {
+  color: #fff !important;
+  font-size: 18px;
+  font-family: samsungone400;
+  font-weight: lighter;
+  margin-bottom: 45px;
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-wrapper > div.slide1 > div.slide_box > a.slide_link_1::after{
+  height: 2px;
+}
+
+div.swiper-wrapper > div.swiper-slide > div.slide_box > a.slide_link_2 {
+  display: inline-block;
+  font-size: 14px;
+  width: fit-content;
+  height: 40px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50px;
+  font-family: samsungone700;
+  font-weight: lighter;
+  padding: 10px 24px 11px 24px;
+  margin-bottom: 25px;
+  transition: all 0.15s linear;
+}
+
+div.swiper-wrapper > div.swiper-slide > div.light_mode > a.slide_link_2 {
+  display: inline-block;
+  font-size: 14px;
+  width: fit-content;
+  height: 40px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 50px;
+  font-family: samsungone700;
+  font-weight: lighter;
+  padding: 10px 24px 11px 24px;
+  margin-bottom: 25px;
+}
+
+div.swiper-wrapper > div.swiper-slide > div.slide_box > a.slide_link_2:hover,
+div.swiper-wrapper > div.swiper-slide > div.slide_box > a.slide_link_2:focus {
+  color: #eee;
+  background-color: #555;
+}
+
+div.swiper-wrapper > div.swiper-slide > div.light_mode > a.slide_link_2:hover,
+div.swiper-wrapper > div.swiper-slide > div.light_mode > a.slide_link_2:focus {
+  color: #313131;
+  background-color: #ddd;
+}
+
+div.swiper-wrapper > div.swiper-slide > div.slide_box > a.slide_link_2:focus {
+  box-shadow: 0 0 0 2px #fff;
+  outline: 2px dotted #000;
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-pagination > span.swiper-pagination-bullet > span.pag_label {
+  width: 100%;
+  height: fit-content;
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  font-family: samsungone700;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19px;
+  color: #000;
+  opacity: 0;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-pagination > span.swiper-pagination-bullet i {
+  display: inline-block;
+  width: 100%;
+  margin: 0 10px 13px 0;
+  border-radius: 0;
+  height: 2.5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-pagination > span.swiper-pagination-bullet-active i {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-pagination > span.swiper-pagination-bullet b {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 0;
+  margin: 0 10px 0 0;
+  border-radius: 0;
+  height: 2.5px;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.swiper-pagination-bullet-active b {
+  animation: countingBar 5200ms linear 1 alternate forwards;
+}
+
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-pagination > span.swiper-pagination-bullet-active[aria-label="Go to slide 6"] b,
+div.wrapper > main > div.slider_1 > div.swiper > div.swiper-pagination > span.swiper-pagination-bullet-active[aria-label="Go to slide 3"] b {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+@keyframes countingBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 160px;
+  }
+}

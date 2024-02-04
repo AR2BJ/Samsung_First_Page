@@ -1,0 +1,91 @@
+div.wrapper>main>div.disclaimer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #363636;
+    font-size: 14px;
+    line-height: normal;
+    width: 100%;
+    font-family: samsungone400;
+    height: fit-content;
+}
+
+div.wrapper>main>div.disclaimer>div.accordion{
+    padding: 0 43px;
+    width: inherit;
+    margin-bottom: 10px;
+}
+
+div.wrapper>main>div.disclaimer>div.accordion>div.accordion{
+    position: relative;
+    overflow: hidden;
+}
+
+div.wrapper>main>div.disclaimer>div.accordion>div.accordion>p.accordion_title{
+    font-size: 15px;
+    font-family: samsungsharpsans;
+    padding-left: 32px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+div.wrapper>main>div.disclaimer>div.accordion>div.accordion>div{
+    display: block;
+    height: auto;
+    font-size: 14px;
+    line-height: 1.71;
+    padding-left: 32px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+div.wrapper>main>div.disclaimer>div.accordion>div.accordion>div.item1_2,
+div.wrapper>main>div.disclaimer>div.accordion>div.accordion>div.item2_2,
+div.wrapper>main>div.disclaimer>div.accordion>div.accordion>div.item3_2,
+div.wrapper>main>div.disclaimer>div.accordion>div.accordion>div.item5_2,
+div.wrapper>main>div.disclaimer>div.accordion>div.accordion>div.item6_2{
+    display: none;
+}
+
+div.wrapper>main>div.disclaimer>div.accordion>div.accordion>div>p{
+    margin-bottom: 10px;
+}
+
+div.wrapper>main>div.disclaimer>div.accordion>div.accordion>div>p>sup{
+    font-size: .7em;
+}
+
+div.wrapper>main>div.disclaimer>div.accordion>div.accordion>div>p>span{
+    margin: 0;
+    font-family: samsungone400;
+    color: #20a2ff;
+    cursor: pointer;
+}
+
+div.wrapper>main>div.disclaimer>div.accordion>div.accordion>p.accordion_title::before{
+    content: ">";
+    display: block;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    margin-top: -10px;
+    line-height: 16px;
+    transition: all .25s;
+    transform: rotate(-90deg);
+    font-size: 12px;
+    font-family: samsungone700;
+}
+
+div.wrapper>main>div.disclaimer>div.accordion>div.show>p.accordion_title::before {
+    transform: rotate(90deg) !important;
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 2px solid #000 !important;
+}

@@ -1,0 +1,137 @@
+div.wrapper > main > div.slider_7 {
+  width: 100%;
+  height: 810px;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  transition: background-color 0.6s cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+div.wrapper > main > div.slider_7 > div.slider_7_title {
+  width: inherit;
+  height: 10%;
+  position: absolute;
+  top: 48px;
+  text-align: center;
+  order: 1;
+  z-index: 10;
+  color: #fff;
+}
+
+div.wrapper > main > div.slider_7 > div.slider_7_title > h2 {
+  font-size: 38px;
+  font-family: samsungsharpsans;
+}
+
+div.wrapper > main > div.slider_7 > div.swiper {
+  height: inherit;
+  width: inherit;
+  order: 3;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.wrapper > main > div.slider_7 > div.swiper > div.swiper-wrapper > div.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+div.wrapper > main > div.slider_7 > div.swiper > div.swiper-wrapper > div.swiper-slide > div.slider_7_img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+div.wrapper > main > div.slider_7 > div.swiper > div.swiper-wrapper > div.swiper-slide > div.slider_7_img > img {
+  object-fit: contain;
+}
+
+div.wrapper > main > div.slider_7 > div.swiper > div.swiper-wrapper > div.swiper-slide > div.slide_box {
+  position: absolute;
+  bottom: -15px;
+  width: inherit;
+}
+
+div.wrapper > main > div.slider_7 > div.swiper > div.swiper-wrapper > div.swiper-slide > div.slide_box > h2 {
+  margin-bottom: 8px;
+  color: #000;
+}
+
+div.wrapper > main > div.slider_7 > div.swiper-pagination {
+  position: absolute;
+  top: 10%;
+  order: 2;
+  height: fit-content;
+  visibility: visible;
+}
+
+div.wrapper > main > div.slider_7 > div.swiper > div.swiper-wrapper > div.slide2 > div.slide_box > a.slide_link_2 {
+  position: relative;
+  bottom: 5px;
+}
+
+div.wrapper > main > div.slider_7 > div.swiper > div.swiper-wrapper > div.slide1 > div.slide_box > a.slide_link_2 {
+  position: relative;
+  bottom: 30px;
+}
+
+div.wrapper > main > div.slider_7 > div.swiper-pagination > span.swiper-pagination-bullet {
+  position: relative;
+  margin: 30px 40px 23px 0;
+  border-radius: 50px !important;
+  width: fit-content;
+  line-height: 12px;
+  height: 35px !important;
+  background-color: transparent;
+  opacity: 1 !important;
+  font-size: 18px;
+  font-family: samsungone700;
+  padding: 11px 14px 8px 14px;
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+}
+
+div.wrapper > main > div.slider_7 > div.swiper-pagination > span.swiper-pagination-bullet > span {
+  position: relative;
+  color: #fff;
+}
+
+div.wrapper > main > div.slider_7 > div.swiper-pagination > span.swiper-pagination-bullet > span > i {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: background-color 1.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+div.wrapper > main > div.slider_7 > div.swiper-pagination > span.swiper-pagination-bullet-active > span > i,
+div.wrapper > main > div.slider_7 > div.swiper-pagination > span.swiper-pagination-bullet:focus > span > i {
+  transform: scaleX(1);
+}
+
+div.wrapper > main > div.slider_7 > div.swiper-pagination > span.swiper-pagination-bullet:hover {
+  color: #555;
+}
+
+div.wrapper > main > div.slider_7 > div.swiper-pagination > span.swiper-pagination-bullet:focus {
+  box-shadow: 0 0 0 2px #fff;
+  outline: 2px dotted #000;
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+div.wrapper > main > div.slider_7 > div.swiper-pagination > span.pag-1:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
