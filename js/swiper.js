@@ -476,7 +476,6 @@ var swiper8 = new Swiper(".swiper8", {
                 num_and_title.removeAttribute("style");
                 slide5.classList.add("swiper-slide-active");
                 slide5.classList.remove("swiper-slide-next");
-                slide5.nextElementSibling.classList.add("swiper-slide-next");
             });
         }
     }
